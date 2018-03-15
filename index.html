@@ -14,6 +14,14 @@
     
     <script>
     // 1. Find and store the element we want to listen to events on.
+    var titleEl = document.getElementsByTagName("h1");
+    
+    var clickerButton = document.getElementById("clicker");
+    var onClickButton = function(){
+        clickerButton.textContent = "Oh funny button"
+        titleEl[0].style.color = "red";
+    }
+    clickerButton.addEventListener("click", onClickButton);
     // 2. Define the function that will respond to the event.
     // 3. Add the event listener for the element and function
     </script>
